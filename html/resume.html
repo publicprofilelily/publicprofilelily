@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style type="text/css" id="operaUserStyle"></style>
+    <link rel="stylesheet" href="http://127.0.0.1:5500/CSS/styles.css?_cacheOverride=1714385027495">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header with Background Image and Home Button -->
+    <button class="header">
+        <a href="../index.html" class="button">
+            <img src="/assets/images/home-icon1.png" alt="Home" class="home-button">
+        </a>
+    </button>
+
+    <!-- The video container -->
+    <div class="relative overflow-hidden h-screen">
+        <video autoplay muted loop id="myVideo" class="absolute w-full h-full object-cover">
+            <source src="/assets/images/background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+      
+
+          <!-- Navigation links -->
+          <div class="relative z-20 p-20">
+            <nav class="py-4 header-nav">
+                <div class="container mx-auto flex justify-center">
+                    <ul class="flex space-x-4 text-white">
+                        <li><a href="about_me.html"><img src="/assets/images/about_me.png" alt="About Me"></a></li>
+                        <li><a href="collaborations.html" class="hover:scale-110 transition-transform duration-200"><img
+                                    src="/assets/images/collaborations.png" alt="Collaborations"></a></li>
+                        <li><a href="workwithme.html"><img src="/assets/images/work_with_me.png" alt="Work With Me"></a></li>
+                        <li><a href="resume.html"><img src="/assets/images/resume.png" alt="Resume"></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+        <!-- Main Content -->
+        <main class="container mx-auto py-8 text-center">
+            <div class="bg-white border border-gray-300 rounded-lg p-6 text-black shadow-lg">
+                <h2 class="text-lg font-semibold mb-2">Timeline of Professional Experience</h2>
+                <div class="relative border-l-2 border-gray-200">
+                    <div class="mb-10 ml-4">
+                        <div class="absolute -left-3 mt-1.5 bg-white border-2 border-gray-200 h-6 w-6 rounded-full">
+                        </div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400">June 2020 - 2022 </time>
+                        <h3 class="text-lg font-semibold text-gray-900">Data science Diploma</h3>
+                        <p class="text-base font-normal text-gray-700">Leading a team of data scientists to optimize our
+                            machine learning infrastructure.</p>
+                    </div>
+                    <div class="mb-10 ml-4">
+                        <div class="absolute -left-3 mt-1.5 bg-white border-2 border-gray-200 h-6 w-6 rounded-full">
+                        </div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400">March 2020 - June 2022</time>
+                        <h3 class="text-lg font-semibold text-gray-900">Data Analysis at Tetra Pak</h3>
+                        <p class="text-base font-normal text-gray-700">Developed new analytical tools to enhance the
+                            accuracy of financial forecasting.</p>
+                    </div>
+                    <div class="mb-10 ml-4">
+                        <div class="absolute -left-3 mt-1.5 bg-white border-2 border-gray-200 h-6 w-6 rounded-full">
+                        </div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400">March 2020 - June 2022</time>
+                        <h3 class="text-lg font-semibold text-gray-900">Junior Accounting and administration</h3>
+                        <p class="text-base font-normal text-gray-700">Developed new analytical tools to enhance the
+                            accuracy of financial forecasting.</p>
+                    </div>
+
+                    <h2 class="text-lg font-semibold mb-3">Educational Credentials and Collaborations</h2>
+
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="py-8 text-white">
+            <div class="container mx-auto flex flex-col items-center">
+                <!-- Ensure flex column layout and center alignment -->
+                <div class="flex justify-center space-x-8 mb-4"> <!-- Explicit centering for social icons -->
+                    <a href="https://linkedin.com" title="Visit my LinkedIn" rel="noopener noreferrer"
+                        target="_blank">
+                        <img src="/assets/images/linkedin_logo.png" alt="LinkedIn Profile"
+                            class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                    </a>
+                    <a href="https://github.com" title="Visit my GitHub" rel="noopener noreferrer" target="_blank">
+                        <img src="/assets/images/github_logo.png" alt="GitHub Profile"
+                            class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                    </a>
+                    <a href="mailto:email@example.com" title="Send me an Email">
+                        <img src="/assets/images/email.png" alt="Email Me"
+                            class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                    </a>
+                    <a href="https://youtube.com" title="Visit my YouTube Channel" rel="noopener noreferrer"
+                        target="_blank">
+                        <img src="/assets/images/youtube.png" alt="YouTube Channel"
+                            class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg w-full max-w-auto text-center">
+                    <!-- Subscription box centered and styled -->
+                    <p class="text-gray-700">Subscribe to my newsletter for the latest updates:</p>
+                    <form action="MAIL_SERVER_URL" method="POST" class="mt-4 flex justify-center items-center">
+                        <input type="email" name="email" placeholder="Enter Your Email" required
+                            class="border border-gray-300 px-4 py-2 rounded-l-lg focus:outline-none focus:border-gray-500">
+                        <button type="submit"
+                            class="bg-gray-900 text-white px-6 py-2 rounded-r-lg hover:bg-gray-700 transition-colors duration-300">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

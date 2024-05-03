@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!-- Tailwind CSS for about me page -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style type="text/css" id="operaUserStyle"></style>
+    <link rel="stylesheet" href="http://127.0.0.1:5500/CSS/styles.css?_cacheOverride=1714385027495">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header with Background Image and Home Button -->
+    <button class="header">
+        <a href="../index.html" class="button">
+            <img src="/assets/images/home-icon1.png" alt="Home" class="home-button">
+        </a>
+    </button>
+
+    <!-- Video container -->
+    <div class="relative h-screen">
+        <!-- Background Video -->
+        <video autoplay="" muted="" loop="" id="myVideo">
+            <source src="/assets/images/background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <!-- navigation links -->
+        <div class="relative z-20 p-20">
+            <nav class="py-4 header-nav">
+                <div class="container mx-auto flex justify-center">
+                    <ul class="flex space-x-4 text-white">
+                        <li><a href="about_me.html"><img src="/assets/images/about_me.png" alt="About Me"></a></li>
+                        <li><a href="collaborations.html" class="hover:scale-110 transition-transform duration-200"><img
+                                    src="/assets/images/collaborations.png" alt="Collaborations"></a></li>
+                        <li><a href="workwithme.html"><img src="/assets/images/work_with_me.png" alt="Work With Me"></a></li>
+                        <li><a href="resume.html"><img src="/assets/images/resume.png" alt="Resume"></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="container mx-auto py-8 text-center px-4">
+                <article class="bg-white rounded-lg p-6 text-black max-w-4xl mx-auto shadow-lg">
+                    <h1 class="text-2xl font-bold mb-4 mt-8">Working With Me - Contact Form</h1>
+                    <section>
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
+                                <input type="text" id="name" name="name"
+                                    class="px-4 py-2 w-full focus:outline-none rounded-md"
+                                    style="background: transparent;">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                                <input type="email" id="email" name="email"
+                                    class="px-4 py-2 w-full focus:outline-none rounded-md"
+                                    style="background: transparent;">
+                            </div>
+                            <div>
+                                <label for="inquiry" class="block text-sm font-medium text-gray-700">Inquiry:</label>
+                                <textarea id="inquiry" name="inquiry" rows="3"
+                                    class="px-4 py-2 w-full focus:outline-none rounded-md"
+                                    style="background: transparent;"></textarea>
+                            </div>
+                            <div>
+                                <label for="projectDescription" class="block text-sm font-medium text-gray-700">Describe
+                                    Project:</label>
+                                <textarea id="projectDescription" name="projectDescription" rows="5"
+                                    class="px-4 py-2 w-full focus:outline-none rounded-md"
+                                    style="background: transparent;"></textarea>
+                            </div>
+                            <div>
+                                <label for="timeFrame" class="block text-sm font-medium text-gray-700">Set Time
+                                    Frame:</label>
+                                <input type="text" id="timeFrame" name="timeFrame"
+                                    class="px-4 py-2 w-full focus:outline-none rounded-md"
+                                    style="background: transparent;">
+                            </div>
+                            <button type="submit" class="bg-gray-900 text-white px-4 py-2 rounded-md">Submit</button>
+                        </form>
+                    </section>
+                </article>
+            </main>
+
+
+            <!-- Footer -->
+            <footer class="py-8 text-white">
+                <div class="container mx-auto flex flex-col items-center">
+                    <!-- Ensure flex column layout -->
+                    <div class="flex justify-center space-x-8 mb-4"> <!-- Explicit centering for social icons -->
+                        <a href="https://linkedin.com" title="Visit my LinkedIn" rel="noopener noreferrer"
+                            target="_blank">
+                            <img src="/assets/images/linkedin_logo.png" alt="LinkedIn Profile"
+                                class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                        </a>
+                        <a href="https://github.com" title="Visit my GitHub" rel="noopener noreferrer" target="_blank">
+                            <img src="/assets/images/github_logo.png" alt="GitHub Profile"
+                                class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                        </a>
+                        <a href="mailto:email@example.com" title="Send me an Email">
+                            <img src="/assets/images/email.png" alt="Email Me"
+                                class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                        </a>
+                        <a href="https://youtube.com" title="Visit my YouTube Channel" rel="noopener noreferrer"
+                            target="_blank">
+                            <img src="/assets/images/youtube.png" alt="YouTube Channel"
+                                class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                        </a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg w-full max-w-auto text-center">
+                        <!-- Subscription box-->
+                        <p class="text-gray-700">Subscribe to my newsletter for the latest updates:</p>
+                        <form action="MAIL_SERVER_URL" method="POST" class="mt-4 flex justify-center items-center">
+                            <input type="email" name="email" placeholder="Enter Your Email" required
+                                class="border border-gray-300 px-4 py-2 rounded-l-lg focus:outline-none focus:border-gray-500">
+                            <button type="submit"
+                                class="bg-gray-900 text-white px-6 py-2 rounded-r-lg hover:bg-gray-700 transition-colors duration-300">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

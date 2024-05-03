@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborations</title>
+
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style type="text/css" id="operaUserStyle"></style>
+    <link rel="stylesheet" href="http://127.0.0.1:5500/CSS/styles.css?_cacheOverride=1714385027495">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <!-- Main stylesheet -->
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Product Carousel stylesheet -->
+    <link rel="stylesheet" href="css/custom-styles.css" />
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- header with background image and home button -->
+    <button class="header">
+        <a href="../index.html" class="button">
+            <img src="/assets/images/home-icon1.png" alt="Home" class="home-button">
+        </a>
+    </button>
+
+    <!-- video container -->
+    <div class="relative overflow-hidden h-screen">
+        <!-- background video -->
+        <video autoplay="" muted="" loop="" id="myVideo">
+            <source src="/assets/images/background1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="relative z-20 p-20">
+            <!-- Navigation -->
+            <nav class="py-4 header-nav">
+                <div class="container mx-auto flex justify-center">
+                    <ul class="flex space-x-6 text-white">
+                        <li><a href="about_me.html"><img src="/assets/images/about_me.png" alt="About Me"></a></li>
+                        <li><a href="collaborations.html" class="hover:scale-110 transition-transform duration-200"><img
+                                    src="/assets/images/collaborations.png" alt="Collaborations"></a></li>
+                        <li><a href="workwithme.html"><img src="/assets/images/work_with_me.png" alt="Work With Me"></a>
+                        </li>
+                        <li><a href="resume.html"><img src="/assets/images/resume.png" alt="Resume"></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Carousel -->
+            <div class="swiper mySwiper py-8">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="/assets/images/tetra_pak.png" alt="Work for Tetra Pak">
+                        <p class="text-center mt-2"> I wrote my thesis at Tetra Pak with the subject of Operational
+                            Analysis ... </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/assets/images/collabs.png" alt="Listed Companies">
+                        <p class="text-center mt-2">I have worked for start-ups and some larger companies:
+                            Tetra Pak, Handelsbanken, and Playground, to mention a few ...
+                        </p>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/assets/images/wyber_dev.png" alt="Wyber Mobile Application">
+                        <p class="text-center mt-2"> After I finnished my vocational training in Data Science in 2023, I
+                            developed apps for start-ups such as Wyber</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/images/coffee_banner.png" alt="Wyber Mobile Applications Front-end">
+                        <p class="text-center mt-2"> We created a model for correlations between
+                            events for real-time dating service. </p>
+
+
+                    </div>
+                </div>
+                <!-- Adds pages for swipes -->
+                <div class="swiper-pagination"></div>
+                <!-- Adds Navigation for swipes -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+            <!-- Socials -->
+            <footer class="py-8 text-white">
+                <div class="container mx-auto flex flex-col items-center">
+                    <!-- Flexible column layout/center alignment -->
+                    <div class="flex justify-center space-x-8 mb-4"> <!-- Centering social icons -->
+                        <a href="https://linkedin.com" title="Visit my LinkedIn" rel="noopener noreferrer"
+                            target="_blank">
+                            <img src="/assets/images/linkedin_logo.png" alt="LinkedIn Profile"
+                                class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                        </a>
+                        <a href="https://github.com" title="Visit my GitHub" rel="noopener noreferrer" target="_blank">
+                            <img src="/assets/images/github_logo.png" alt="GitHub Profile"
+                                class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                        </a>
+                        <a href="mailto:email@example.com" title="Send me an Email">
+                            <img src="/assets/images/email.png" alt="Email Me"
+                                class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                        </a>
+                        <a href="https://youtube.com" title="Visit my YouTube Channel" rel="noopener noreferrer"
+                            target="_blank">
+                            <img src="/assets/images/youtube.png" alt="YouTube Channel"
+                                class="w-16 h-16 hover:scale-110 transition-transform duration-200">
+                        </a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg w-full max-w-auto text-center"> <!-- Subscription form  -->
+                        <p class="text-gray-700">Subscribe to my newsletter for the latest updates:</p>
+                        <form action="MAIL_SERVER_URL" method="POST" class="mt-4 flex justify-center items-center">
+                            <input type="email" name="email" placeholder="Enter Your Email" required
+                                class="border border-gray-300 px-4 py-2 rounded-l-lg focus:outline-none focus:border-gray-500">
+                            <button type="submit"
+                                class="bg-gray-900 text-white px-6 py-2 rounded-r-lg hover:bg-gray-700 transition-colors duration-300">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Swiper JS Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initializes Swiper -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
