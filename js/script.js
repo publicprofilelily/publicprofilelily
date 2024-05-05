@@ -1,16 +1,16 @@
 function goToAboutMe() {
-    window.location.href = 'about_me.html';
+    window.location.href = 'html/about_me.html';
 }
 
 function goToCollaborations() {
-    window.location.href = 'collaborations.html';
+    window.location.href = 'html/collaborations.html';
 }
 
 function goToWorkWithMe() {
-    window.location.href = 'workwithme.html';
+    window.location.href = 'html/workwithme.html';
 }
 
 function goToResume() {
-    window.location.href = 'resume.html';
+    window.location.href = 'html/resume.html';
 }
 
