@@ -12,7 +12,7 @@ The resume website has 5 pages;
 
 -Work with me
 
-A project carousel for collaborations, and resume timeline. 
+A project carousel for collaborations, and resume timeline. Its made with tailwind, html, little javascript.
 
 ## Project Structure
 
