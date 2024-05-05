@@ -17,7 +17,7 @@ A project carousel for collaborations, and resume timeline.
 ## Project Structure
 
 - `css`: The style sheets in this folder ensure that the website maintains a professional and modern aesthetic across different devices and browsers.
-- 'assets': visual elements such as profile pictures and icons, which are integral to the visual impact of the resume.
+- `assets`: visual elements such as profile pictures and icons, which are integral to the visual impact of the resume.
 - `js`: JavaScript files here are used to add functionality such as navigation and interactive elements that improve user experience.
 - `html`: This folder houses the core pages of the website:
   - `index.html`: Acts as the gateway to the website, providing a brief introduction and links to other pages.
